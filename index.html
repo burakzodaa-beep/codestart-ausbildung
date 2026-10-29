@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Омӯзиши ройгони барномасозӣ, асосҳои компютер ва IT Ausbildung бо забонҳои тоҷикӣ, олмонӣ ва англисӣ.">
+<title>CodeStart — IT Lernen</title>
+<style>
+:root{--blue:#2457d6;--dark:#14213d;--light:#f3f6fc;--green:#14805e}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:var(--light);color:#202a3b;line-height:1.6}
+header{background:var(--dark);color:white;padding:24px 16px}
+nav{max-width:1000px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{font-size:25px;font-weight:bold}
+select,button{padding:10px 13px;border-radius:9px;border:1px solid #d5dbea;font-size:15px}
+select{background:white;color:#17213a}
+.hero{background:linear-gradient(135deg,#2457d6,#16356e);color:white;text-align:center;padding:45px 18px}
+.hero h1{font-size:clamp(28px,6vw,44px);line-height:1.2;margin:0 0 14px}
+.hero p{max-width:650px;margin:0 auto 22px}
+.btn{display:inline-block;background:#fff;color:#1746a2;text-decoration:none;padding:12px 18px;border-radius:9px;font-weight:bold}
+main{max-width:1000px;margin:30px auto;padding:0 15px}
+h2{color:var(--dark)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:white;padding:20px;border-radius:15px;box-shadow:0 3px 14px #17213a0c;border:1px solid #e4e9f3}
+.card h3{margin-top:5px;color:#2048a2}
+.emoji{font-size:32px}
+.lesson{margin-top:25px;background:white;padding:22px;border-radius:15px;border:1px solid #e4e9f3}
+code{background:#edf1fb;padding:3px 7px;border-radius:5px;color:#1648a8}
+.notice{background:#e5f6ef;padding:13px;border-radius:9px}
+footer{margin-top:35px;background:var(--dark);color:white;text-align:center;padding:25px 15px}
+footer a{color:#bcd2ff}
+.small{font-size:14px;color:#637087}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<div class="logo">💻 CodeStart</div>
+<select id="language" aria-label="Language">
+<option value="tg">Тоҷикӣ</option>
+<option value="de">Deutsch</option>
+<option value="en">English</option>
+</select>
+</nav>
+</header>
+
+<section class="hero">
+<h1 id="heroTitle">Олами IT-ро аз сифр омӯз!</h1>
+<p id="heroText">Барномасозӣ, қисмҳои компютер ва омодагӣ ба Ausbildung — ройгон ва бо се забон.</p>
+<a href="#courses" class="btn" id="startBtn">Оғози омӯзиш ↓</a>
+</section>
+
+<main>
+<section id="courses">
+<h2 id="courseTitle">📚 Самтҳои омӯзиш</h2>
+<div class="grid">
+<article class="card">
+<div class="emoji">👨‍💻</div>
+<h3 id="c1">Барномасозӣ</h3>
+<p id="p1">Омӯзиши HTML, CSS, JavaScript ва асосҳои навиштани код.</p>
+<a href="#programming" id="l1">Омӯзиш →</a>
+</article>
+<article class="card">
+<div class="emoji">🖥️</div>
+<h3 id="c2">Асосҳои компютер</h3>
+<p id="p2">Қисмҳои компютер, RAM, CPU, хотира ва системаҳои амалиётӣ.</p>
+<a href="#computer" id="l2">Омӯзиш →</a>
+</article>
+<article class="card">
+<div class="emoji">🇩🇪</div>
+<h3 id="c3">IT Ausbildung</h3>
+<p id="p3">Истилоҳҳои IT бо забони олмонӣ ва шиносоӣ бо касбҳои техникӣ.</p>
+<a href="#ausbildung" id="l3">Омӯзиш →</a>
+</article>
+</div>
+</section>
+
+<section class="lesson" id="programming">
+<h2 id="progTitle">👨‍💻 Дарси 1: Барномасозӣ чист?</h2>
+<p id="progText">Барномасозӣ — навиштани дастурҳо ба компютер барои иҷрои вазифа мебошад.</p>
+<p><b>HTML:</b> сохтори саҳифаи вебро месозад.</p>
+<p><b>CSS:</b> намуди зоҳирии вебсайтро оро медиҳад.</p>
+<p><b>JavaScript:</b> ба вебсайт имкони интерактивӣ медиҳад.</p>
+<p><b>Мисоли HTML:</b></p>
+<pre><code>&lt;h1&gt;Hallo Welt!&lt;/h1&gt;
+&lt;p&gt;Ich lerne Programmieren.&lt;/p&gt;</code></pre>
+</section>
+
+<section class="lesson" id="computer">
+<h2 id="compTitle">🖥️ Дарси 2: Қисмҳои компютер</h2>
+<p><b>CPU — Processor:</b> фармонҳоро иҷро мекунад.</p>
+<p><b>RAM:</b> маълумоти муваққатиро ҳангоми кор нигоҳ медорад.</p>
+<p><b>SSD:</b> файлҳо ва барномаҳоро нигоҳ медорад.</p>
+<p><b>Operating System:</b> системае мисли Windows ё Linux, ки кори компютерро идора мекунад.</p>
+</section>
+
+<section class="lesson" id="ausbildung">
+<h2 id="ausTitle">🇩🇪 Дарси 3: IT Ausbildung</h2>
+<p><b>Fachinformatiker/in:</b> мутахассиси технологияҳои информатсионӣ.</p>
+<p><b>Programmierung:</b> барномасозӣ.</p>
+<p><b>Computer:</b> компютер.</p>
+<p><b>Ausbildung:</b> таҳсилоти касбӣ бо омӯзиши назариявӣ ва амалӣ.</p>
+<p><b>Praktikum:</b> таҷрибаомӯзӣ.</p>
+<div class="notice" id="tip">Маслиҳат: ҳар рӯз каме забони олмонӣ ва барномасозиро омӯзед.</div>
+</section>
+
+<section class="lesson">
+<h2 id="aboutTitle">🌍 Дар бораи CodeStart</h2>
+<p id="aboutText">CodeStart лоиҳаи таълимии ройгон барои онҳое мебошад, ки мехоҳанд барномасозӣ, асосҳои компютер ва IT Ausbildung-ро омӯзанд.</p>
+<p class="small" id="future">Дар оянда метавонем дарсҳо, машқҳо, мақолаҳо ва китобҳои муаллифиро илова кунем.</p>
+</section>
+
+<section class="lesson">
+<h2 id="contactTitle">📩 Тамос ва ҳамкорӣ</h2>
+<p id="contactText">Барои пешниҳод ё ҳамкорӣ метавонед баъдтар почтаи электронии махсуси лоиҳаро илова кунед.</p>
+<p class="small" id="privacy">Маълумоти шахсии худро дар ин саҳифа нашр накунед.</p>
+</section>
+</main>
+
+<footer>
+<strong>CodeStart</strong>
+<p>Learn • Programmieren • Lernen</p>
+<p>© 2026 CodeStart</p>
+<p class="small" id="adNote">Ҷой барои таблиғоти оянда — таблиғ ҳоло фаъол нест.</p>
+</footer>
+
+<script>
+const translations={
+tg:{
+heroTitle:"Олами IT-ро аз сифр омӯз!",heroText:"Барномасозӣ, қисмҳои компютер ва омодагӣ ба Ausbildung — ройгон ва бо се забон.",startBtn:"Оғози омӯзиш ↓",courseTitle:"📚 Самтҳои омӯзиш",c1:"Барномасозӣ",p1:"Омӯзиши HTML, CSS, JavaScript ва асосҳои навиштани код.",l1:"Омӯзиш →",c2:"Асосҳои компютер",p2:"Қисмҳои компютер, RAM, CPU, хотира ва системаҳои амалиётӣ.",l2:"Омӯзиш →",c3:"IT Ausbildung",p3:"Истилоҳҳои IT бо забони олмонӣ ва шиносоӣ бо касбҳои техникӣ.",l3:"Омӯзиш →",progTitle:"👨‍💻 Дарси 1: Барномасозӣ чист?",progText:"Барномасозӣ — навиштани дастурҳо ба компютер барои иҷрои вазифа мебошад.",compTitle:"🖥️ Дарси 2: Қисмҳои компютер",ausTitle:"🇩🇪 Дарси 3: IT Ausbildung",tip:"Маслиҳат: ҳар рӯз каме забони олмонӣ ва барномасозиро омӯзед.",aboutTitle:"🌍 Дар бораи CodeStart",aboutText:"CodeStart лоиҳаи таълимии ройгон барои омӯзиши барномасозӣ, компютер ва IT Ausbildung мебошад.",future:"Дар оянда метавонем дарсҳо, машқҳо, мақолаҳо ва китобҳои муаллифиро илова кунем.",contactTitle:"📩 Тамос ва ҳамкорӣ",contactText:"Барои пешниҳод ё ҳамкорӣ баъдтар почтаи электронии махсус илова мекунем.",privacy:"Маълумоти шахсии худро дар ин саҳифа нашр накунед.",adNote:"Ҷой барои таблиғоти оянда — таблиғ ҳоло фаъол нест."
+},
+de:{
+heroTitle:"Lerne IT von Grund auf!",heroText:"Programmierung, Computergrundlagen und Vorbereitung auf die IT-Ausbildung — kostenlos und in drei Sprachen.",startBtn:"Lernen beginnen ↓",courseTitle:"📚 Lernbereiche",c1:"Programmierung",p1:"Lerne HTML, CSS, JavaScript und die Grundlagen des Programmierens.",l1:"Lernen →",c2:"Computergrundlagen",p2:"Computerteile, RAM, CPU, Speicher und Betriebssysteme.",l2:"Lernen →",c3:"IT-Ausbildung",p3:"IT-Fachbegriffe auf Deutsch und technische Berufe kennenlernen.",l3:"Lernen →",progTitle:"👨‍💻 Lektion 1: Was ist Programmierung?",progText:"Programmierung bedeutet, einem Computer Anweisungen zur Ausführung von Aufgaben zu geben.",compTitle:"🖥️ Lektion 2: Computerteile",ausTitle:"🇩🇪 Lektion 3: IT-Ausbildung",tip:"Tipp: Lerne jeden Tag ein wenig Deutsch und Programmierung.",aboutTitle:"🌍 Über CodeStart",aboutText:"CodeStart ist ein kostenloses Lernprojekt für Programmierung, Computergrundlagen und IT-Ausbildung.",future:"Später können wir Lektionen, Übungen, Artikel und eigene Lernbücher ergänzen.",contactTitle:"📩 Kontakt und Zusammenarbeit",contactText:"Eine eigene Projekt-E-Mail-Adresse kann später ergänzt werden.",privacy:"Veröffentliche keine persönlichen Daten auf dieser Seite.",adNote:"Platz für zukünftige Werbung — Werbung ist noch nicht aktiv."
+},
+en:{
+heroTitle:"Learn IT from the beginning!",heroText:"Programming, computer basics and IT Ausbildung preparation — free and in three languages.",startBtn:"Start learning ↓",courseTitle:"📚 Learning areas",c1:"Programming",p1:"Learn HTML, CSS, JavaScript and coding fundamentals.",l1:"Learn →",c2:"Computer basics",p2:"Computer parts, RAM, CPU, storage and operating systems.",l2:"Learn →",c3:"IT Ausbildung",p3:"Learn German IT terms and explore technical careers.",l3:"Learn →",progTitle:"👨‍💻 Lesson 1: What is programming?",progText:"Programming means writing instructions for a computer to perform tasks.",compTitle:"🖥️ Lesson 2: Computer components",ausTitle:"🇩🇪 Lesson 3: IT Ausbildung",tip:"Tip: Study a little German and programming every day.",aboutTitle:"🌍 About CodeStart",aboutText:"CodeStart is a free learning project for programming, computer basics and IT Ausbildung.",future:"Lessons, exercises, articles and original learning books may be added later.",contactTitle:"📩 Contact and collaboration",contactText:"A dedicated project email address can be added later.",privacy:"Do not publish your personal information on this page.",adNote:"Space for future advertising — ads are not active yet."
+}
+};
+document.getElementById("language").addEventListener("change",function(){
+const t=translations[this.value];
+Object.keys(t).forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=t[id];});
+document.documentElement.lang=this.value;
+});
+</script>
+</body>
+  </html>
+  
